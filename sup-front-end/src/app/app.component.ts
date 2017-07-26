@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <header>
         <h1>sup</h1>
-        <img src="src/app/img/headshot5.jpg" alt="头像"/>
+        <!--<img [src]="src/app/img/headshot5.jpg" alt="头像"/>-->
         <nav>
             <ul>
                 <li>个人管理</li>
@@ -18,17 +18,17 @@ import { Component } from '@angular/core';
     <div id="content">
         <div class="section">
             <h4>个人管理</h4>
-            <a><img [src]="{{manager}}" alt="个人管理"/></a>
+            <a><img src="{{manager}}" alt="个人管理加载失败"/></a>
         </div>
         
         <div class="section">
             <h3>笔记</h3>
-            <a><img [src]="notes.imageUrl" alt="笔记"/></a>
+            <a><img src="{{notes}}" alt="笔记失败"/></a>
         </div>
         
         <div class="section">
             <h3>作品集</h3>
-            <a><img [src]="works.imageUrl" alt="作品集"/></a>
+            <a><img src="{{works}}" alt="作品集失败"/></a>
         </div>
     </div>
     
@@ -42,4 +42,6 @@ export class AppComponent {
   title = 'sup';
   
   manager = "http://img5.imgtn.bdimg.com/it/u=4233531470,1753260751&fm=26&gp=0.jpg";
+  notes = "http://img5.imgtn.bdimg.com/it/u=4233531470,1753260751&fm=26&gp=0.jpg";
+  works = "http://img5.imgtn.bdimg.com/it/u=4233531470,1753260751&fm=26&gp=0.jpg";
 }
