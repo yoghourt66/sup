@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <header>
+    <header class="head">
         <h1>sup</h1>
         <!--<img [src]="src/app/img/headshot5.jpg" alt="头像"/>-->
         <nav>
@@ -32,7 +32,7 @@ import { Component } from '@angular/core';
         </div>
     </div>
     
-    <footer>
+    <footer class="foot">
         COPYRIGHT@yoghourt
     </footer>
   `,
